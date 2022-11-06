@@ -11,12 +11,12 @@ class WelcomeViewController: UITabBarController {
 
     @IBOutlet var usernameLabel: UILabel!
     
-    //var username: String!
+  //  var username: String! = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       // let username = usernameLabel.text ?? "User"
+       // usernameLabel.text = username
     }
     
     @IBAction func logoutButton() {

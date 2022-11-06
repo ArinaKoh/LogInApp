@@ -12,6 +12,17 @@ class MainViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     @IBOutlet var userNameTF: UITextField!
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.destination is WelcomeViewController else { return }
+       // welcomeVC.username = userNameTF.text
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
+    
+        guard (touches.first?.location(in: view)) != nil else { return }
+    }
+    
     @IBAction func loginButtonPressed() {
         
         guard let inputText = userNameTF.text, !inputText.isEmpty else {
@@ -38,6 +49,10 @@ class MainViewController: UIViewController {
     
     @IBAction func forgetPasswordButton() {
         showAlert(withTitle: "Oops", andMessage: "Your password is 123")
+    }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        guard segue.source is WelcomeViewController else {return}
     }
     
     //MARK: - Private Methods
