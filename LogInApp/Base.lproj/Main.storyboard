@@ -113,16 +113,10 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hkp-hX-34E">
-                                <rect key="frame" x="77" y="167" width="221" height="40.666666666666657"/>
+                                <rect key="frame" x="119.33333333333333" y="167" width="136.66666666666669" height="40.666666666666657"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTe-ix-zGo">
-                                        <rect key="frame" x="0.0" y="0.0" width="144.33333333333334" height="40.666666666666664"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bv0-tF-pHG">
-                                        <rect key="frame" x="152.33333333333334" y="0.0" width="68.666666666666657" height="40.666666666666664"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTe-ix-zGo">
+                                        <rect key="frame" x="0.0" y="0.0" width="136.66666666666666" height="40.666666666666664"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -140,9 +134,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9jx-BR-PhL"/>
-                    <connections>
-                        <outlet property="usernameLabel" destination="Bv0-tF-pHG" id="TKv-4b-Ehn"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S3u-22-H9N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="1Ju-fr-UXf" userLabel="Exit" sceneMemberID="exit"/>
